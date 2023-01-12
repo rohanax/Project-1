@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products page</title>
+    <style>
+        #screen>div:nth-child(2) {
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        #leftnavbar {
+            width: 20%;
+            border: 1px solid rgb(12, 12, 12);
+            height: 1300px;
+            background-color: rgb(230, 231, 232);
+        }
+
+        #rightproducts { 
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid pink;
+            height: 260px;
+            background-color: rgb(198, 230, 239);
+
+
+        }
+
+        #rightproducts>div {
+            width: 100%;
+            display: flex;
+            border: 1px solid rgb(46, 44, 44);
+            height: 265px;
+            background-color: rgb(198, 230, 239);
+
+        }
+
+        #rightproducts>div>div {
+            width: 18%;
+            height: 250px;
+            margin: auto;
+            border: 2px solid rgb(17, 17, 17);
+            background-color: gold;
+        }
+
+        #rightproducts>div>div>img {
+            width: 90%;
+            height: 190px;
+            margin: auto;
+            
+            
+            
+        }
+
+        #rightproducts>div>div>div {
+            height: 60px;
+            width: 70%;
+            margin: auto;
+        }
+
+        #rightproducts>div>div>div>p {
+            font-size: 10px;
+            margin-bottom: 2px;
+            margin-top: 0;
+        }
+
+        #rightproducts>div>div>div>button {
+            width: 100px;
+            height: 20px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="navbar">
+        <button><a href="./cart.html">cart</a></button>
+    </div>
+
+
+    <h1>products</h1>
+    <div id="screen">
+        <div>
+            <p>Home/Footwear/MFB BRAND</p>
+            <p>MFB BRAND-2854 Brands</p>
+        </div>
+        <div>
+            <div id="leftnavbar">
+                <p>FILTERS</p>
+            </div>
+            <div id="rightproducts">
+                <div>
+
+                    <div id="lineOneOne">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button onclick="addToCart(lineOneOne)">Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div id="lineOneTwo">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>Addidas</p>
+                            <p>Mens Sneakers</p>
+                            <p>2000</p>
+                            <button onclick="addToCart(lineOneTwo)">Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div id="lineOneThree">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>Nike</p>
+                            <p>Mens Sneakers</p>
+                            <p>5000</p>
+                            <button onclick="addToCart(lineOneThree)">Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div id="lineOneFour">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>spark</p>
+                            <p>Mens Sneakers</p>
+                            <p>1000</p>
+                            <button onclick="addToCart(lineOneFour)">Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div id="lineOneFive">
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>campus</p>
+                            <p>Mens Sneakers</p>
+                            <p>800</p>
+                            <button onclick="addToCart(lineOneFive)">Add To Cart</button>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button onclick="addtocart()">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button onclick="addtocart()">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button onclick="addtocart()">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button onclick="addtocart()">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"
+                            alt="shoes" />
+                        <div>
+                            <p>RoadStar</p>
+                            <p>Mens Sneakers</p>
+                            <p>900</p>
+                            <button>Add To Cart</button>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                </div>
+                
+                </div>
+                
+                
+                
+                    
+                  
+                
+                    
+                  
+
+                <script src="./server.js"></script>
+
+
+            </div>
+        </div>
+
+</body>
+
+</html>

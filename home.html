@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script>
+      function logout (){
+        // alert ("logout is working")
+        // console.log(localStorage.getItem("userData"))
+        localStorage.removeItem("userData");
+        localStorage.removeItem("allProducts");
+        localStorage.removeItem("isuserLoggedIn")
+
+        alert("logout is succeed");
+      }
+    </script>
+</head>
+<body>
+   <div id="navbar">
+     <button><a href="./cart.html">cart</a></button>
+     <button onclick="logout()">Logout</button>
+   </div>
+    <div>
+    <h1>Home page</h1>
+    <button><a href="./product.html">product</a></button>
+    </div>
+
+
+    <!-- <script src="./server.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart page</title>
+<style>
+   #screen > div {
+    width: 60%;
+    margin: auto;
+    border: 1px solid green;
+    height: 550px;
+      display: flex;
+   }
+   #screen > div >div:nth-child(1) {
+       width: 70%;
+       border: 1px solid red;
+       height: 550px;
+       
+   }
+   #screen > div >div:nth-child(2) {
+       width: 30%;
+       border: 1px solid blue;
+       height: 300px;
+   }
+</style>
+<script>
+//    import product data from localStorage
+//    Map the data and push every product to html
+  
+     window.onload = function(){
+        var isLoggedIn = JSON.parse(localStorage.getItem("isuserLoggedIn"));
+        console.log(isLoggedIn);
+        if(isLoggedIn == true){
+            alert("welcome Home.!")
+            const allProducts =  JSON.parse(localStorage.getItem("allProducts"));
+            console.log(allProducts ,"allProducts")
+            var leftcart = document.getElementById("leftcart");
+            var rightcart = document.getElementById("rightcart");
+            var rightdivpriceTotalTag = document.createElement("div");
+            var totalprice = 0;
+            for(var i = 0; i < allProducts.length; i++) {
+            console.log(allProducts[i], "allProducts")
+            const innerDiv = document.createElement("div")
+            innerDiv.style.display = "flex";
+            var leftdiv = document.createElement("div");
+
+            var img = document.createElement("img");
+            img.src = allProducts[i].pI;
+            img.style.width = "80px";
+            img.style.height = "80px";
+            leftdiv .append(img);
+            
+            var rightdiv =document.createElement("div");
+
+            var name = document.createElement("h4");
+            name.innerText = allProducts[i].pN;
+            rightdiv.append(name);
+
+            var price = document.createElement("p");
+            price.innerText = allProducts[i].pP;
+            totalprice = totalprice + Number(allProducts[i].pP);
+            rightdiv.append(price);
+            innerDiv.append(leftdiv);
+            innerDiv.append(rightdiv);
+
+
+
+            leftcart.append(innerDiv); 
+            }
+            rightdivpriceTotalTag.append(totalprice);
+            rightcart.append(rightdivpriceTotalTag);
+            // console.log(totalprice , "totalprice");
+            
+        } else{
+            alert("Login first.!")
+            window.location.href = "./login.html";
+        }
+    }
+</script>
+</head>
+<body>
+    <h1>cart</h1>
+    <div id="screen">
+
+    <div>
+     <div id="leftcart"></div>
+     
+        <div id="rightcart"></div>
+        </div>
+ </div>
+ 
+    <script src="./server.js"></script>   
+</body>
+</html>
